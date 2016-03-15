@@ -17,7 +17,7 @@ class msg
 		$this->timeout = $s;
 	}
 	function checkCache($cacheKey) {
-		if($cacheKey == false || property_exists($this, 'cache')) {
+		if($cacheKey == false || !property_exists($this, 'cache')) {
 			return true;
 		}else {
 			if($this->cache->get($cacheKey)) {

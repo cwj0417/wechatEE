@@ -30,7 +30,7 @@ class cache_redis implements cache_interface
 		if($this->conn->connect($config['host'], $config['port'])) {
 			return true;
 		}else {
-			return false
+			return false;
 		}
 	}
 	function set($key, $value) {

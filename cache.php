@@ -2,7 +2,7 @@
 interface cache_interface
 {
 	function init($config, $prefix);
-	function set($key);
+	function set($key, $value);
 	function get($key);
 	function expireat($key, $time);
 }
